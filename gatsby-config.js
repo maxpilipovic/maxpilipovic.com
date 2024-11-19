@@ -9,15 +9,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Hey, I'm Max Pilipovic`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Max Pilipovic`,
+      summary: `I'm a software developer who loves to create things and talk about life`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Max's Gatsby Blog`,
+    siteUrl: `https://maxpilipovic.netlify.app/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `maxpilipovic`,
     },
   },
   plugins: [
