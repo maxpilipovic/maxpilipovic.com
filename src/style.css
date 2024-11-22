@@ -158,6 +158,56 @@ h6 > a {
   color: inherit;
 }
 
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: #181818;
+  color: white;
+  border-bottom: 1px solid #444;
+}
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 2rem; 
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Adds consistent spacing between links */
+}
+
+.navbar .navbar-links a {
+  color: grey;
+  text-decoration: none; /* Ensures underlines are removed */
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-links a:hover {
+  color: white; /* Changes link color to white on hover */
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+
 /* Prose */
 
 p {
