@@ -8,6 +8,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from 'gatsby';
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -30,7 +31,8 @@ const Bio = () => {
   const author = data.site.siteMetadata?.author
 
   return (
-    <div className="bio">
+    <div className="bio"> 
+    {/* Profile Picture
       <StaticImage
         className="bio-avatar"
         layout="fixed"
@@ -40,13 +42,28 @@ const Bio = () => {
         height={50}
         quality={95}
         alt="Profile picture"
-      />
-      {author?.name && (
-        <p>
-          {author?.summary || null}
-          {` `}
+      /> */}
+      <div className="hero-wrapper">
+        {author?.name && <h2 style = {{color: "white", fontSize: "50px", marginBottom: "30px"}}> Hey, I'm {author.name}</h2>}
+        <p className = "hero-description">
+          I am software developer and ex athete (tenis player).
+          This is my corner of the internet, follow my passion
+          - developing things! 🌐
         </p>
-      )}
+        <p className = "hero-description">
+          On this site, you can check out some of the {''}
+          <Link to="/notes">notes</Link> I've written, or view open-source{' '}
+          <Link to="/projects">projects</Link> or learn{' '}
+          <Link to="/me">about me</Link> as a person ☂️.
+        </p>
+        <div className="decoration">
+            <StaticImage
+              src="../images/MaxPilipovicProfile.jpg"
+              className="bio-avatar"
+              alt="Profile picture"
+            />
+        </div>
+      </div>
     </div>
   )
 }

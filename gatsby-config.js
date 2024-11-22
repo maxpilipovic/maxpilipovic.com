@@ -9,12 +9,12 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Hey, I'm Max Pilipovic`,
+    title: `Max Pilipovic's Personal Website`,
     author: {
-      name: `Max Pilipovic`,
+      name: `Max!`,
       summary: `I'm a software developer who loves to create things and talk about life`,
     },
-    description: `Max's Gatsby Blog`,
+    description: `Max Pilipovic's Personal Website`,
     siteUrl: `https://maxpilipovic.netlify.app/`,
     social: {
       twitter: `maxpilipovic`,
@@ -102,7 +102,7 @@ module.exports = {
               }
             }`,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Max Pilipovic's Personal Website",
           },
         ],
       },
@@ -110,8 +110,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Gatsby`,
+        name: `Max Pilipovic's Personal Website`,
+        short_name: `Max`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website

@@ -7,7 +7,7 @@ const Navbar = () => (
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '1rem 2rem',
-    backgroundColor: '#282c35',
+    backgroundColor: '#181818',
     color: 'white',
   }}>
     <h1 style={{ margin: 0 }}>

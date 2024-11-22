@@ -6,6 +6,7 @@ const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location.pathname === rootPath;
 
+  {/* Wrapper */}
   return (
     <div
       className="global-wrapper"
@@ -20,24 +21,6 @@ const Layout = ({ location, title, children }) => {
     >
       {/* Navbar */}
       <Navbar />
-
-      {/* Header */}
-      <header
-        style={{
-          textAlign: 'center',
-          margin: '2rem 0',
-        }}
-      >
-        {isRootPath ? (
-          <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>{title}</h1>
-        ) : (
-          <h2 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>
-            <Link to="/" style={{ textDecoration: 'none', color: '#282c35' }}>
-              {title}
-            </Link>
-          </h2>
-        )}
-      </header>
 
       {/* Main Content */}
       <main>{children}</main>

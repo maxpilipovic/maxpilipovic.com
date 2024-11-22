@@ -93,6 +93,7 @@ hr {
   border: 0;
 }
 
+
 /* Heading */
 
 h1,
@@ -318,6 +319,64 @@ a:focus {
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
 }
+
+/* Hero */
+.hero-wrapper {
+  padding-top: 2rem;
+  display: grid;
+}
+
+.hero-description {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--font-color-hero-description);
+  font-weight: 500;
+}
+
+.decoration {
+  display: flex;
+  align-items: center;
+  order: 1;
+}
+
+@media screen and (min-width: 700px) {
+  .hero-wrapper {
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .hero-description {
+    grid-column: 1;
+    margin: 1.5rem 0 0;
+    font-size: 1.2rem;
+  }
+
+  .decoration {
+    grid-column: 2;
+    justify-content: flex-end;
+    align-self: start;
+    margin-top: -150px
+  }
+}
+
+/* Containers */
+.container {
+  max-width:780px;
+  padding: 0 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
 
 /* Media queries */
 
