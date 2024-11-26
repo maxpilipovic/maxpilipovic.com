@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './navbar'; // Import the Navbar component
 import { Link } from 'gatsby'; // For Gatsby-specific navigation
+import Footer from './footer'; 
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
@@ -26,57 +27,7 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
 
       {/* Footer */}
-      <footer
-        style={{
-          marginTop: '2rem',
-          borderTop: '1px solid #ccc',
-          paddingTop: '1rem',
-          textAlign: 'center',
-          fontSize: '0.9rem',
-          color: '#888',
-        }}
-      >
-        <nav style={{ marginBottom: '1rem' }}>
-          <ul
-            style={{
-              listStyle: 'none',
-              padding: 0,
-              margin: 0,
-              display: 'flex',
-              justifyContent: 'center',
-              gap: '1rem',
-            }}
-          >
-            <li>
-              <a
-                href="#youtube"
-                style={{ textDecoration: 'none', color: '#007acc' }}
-              >
-                YouTube
-              </a>
-            </li>
-            <li>
-              <a
-                href="#twitch"
-                style={{ textDecoration: 'none', color: '#007acc' }}
-              >
-                Twitch
-              </a>
-            </li>
-            <li>
-              <a
-                href="#instagram"
-                style={{ textDecoration: 'none', color: '#007acc' }}
-              >
-                Instagram
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <p>
-          &copy; {new Date().getFullYear()} Max Pilipovic. All rights reserved.
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 };

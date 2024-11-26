@@ -166,13 +166,6 @@ h6 > a {
   padding: 1rem 0;
   background-color: #181818;
   color: white;
-  border-bottom: 1px solid #444;
-}
-
-.container {
-  max-width: 1200px; 
-  margin: 0 auto; 
-  padding: 0 2rem; 
 }
 
 .navbar .navbar-brand {
@@ -182,30 +175,290 @@ h6 > a {
   text-decoration: none;
 }
 
-.navbar .navbar-links {
+.navbar-links {
   display: flex;
   align-items: center;
   gap: 1rem; /* Adds consistent spacing between links */
 }
 
-.navbar .navbar-links a {
-  color: grey;
-  text-decoration: none; /* Ensures underlines are removed */
-  margin: 0 0.5rem;
-}
-
-.navbar .navbar-links a:hover {
-  color: white; /* Changes link color to white on hover */
-}
-
-#theme-toggle {
-  background: none;
-  border: none;
+/* Navbar Links */
+.navbar-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #444; /* Matches footer buttons */
   color: white;
-  font-size: 1rem;
-  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s, border-color 0.3s;
 }
 
+.navbar-link:hover {
+  background: #555; /* Matches hover effect of footer buttons */
+  border-color: #666;
+}
+
+/* Theme Toggle Button */
+.navbar-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #444;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid #555;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.navbar-button:hover {
+  background: #555;
+  border-color: #666;
+}
+
+/* Footer */
+
+.footer {
+  padding: 3rem 0;
+  font-family: var(--font-body);
+  background-color: #181818; /* Matches your site's background */
+  color: #888;
+}
+
+.footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.footer section:last-child {
+  margin-bottom: 0; /* Remove margin for the last section */
+}
+
+.footer img {
+  display: inline-block;
+  max-height: 28px;
+  width: auto;
+}
+
+.footer nav {
+  display: flex;
+  gap: 1rem; /* Horizontal gap between links */
+  margin: 0 1rem;
+  flex-wrap: wrap; /* Ensures links wrap on smaller screens */
+  justify-content: center;
+}
+
+.footer nav img {
+  display: inline-block;
+  max-height: 18px;
+  width: auto;
+}
+
+/* Social Links (Linktree) */
+.footer-link {
+  color: #007acc; /* Matches your link color */
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* Thicker underline on hover */
+  color: #005f99; /* Slightly darker hover color */
+}
+
+/* Resource Links (Boxes) */
+.footer a.footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333; /* Box background */
+  color: white; /* Text color */
+  padding: 0.5rem 1rem; /* Smaller padding for smaller boxes */
+  border-radius: 6px; /* Slightly rounded corners */
+  border: 2px solid #555; /* Border around the box */
+  gap: 0.5rem; /* Space between icon and text */
+  font-size: 0.85rem; /* Slightly smaller font size */
+  text-decoration: none;
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth hover effect */
+}
+
+.footer a.footer-button:hover {
+  background: #444; /* Darker background on hover */
+  border-color: #666; /* Slightly lighter border on hover */
+  color: #fff;
+}
+
+.footer-icon {
+  width: 20px; /* Smaller icon size */
+  height: 20px;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* Projects -------------------*/
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-box {
+  position: relative;
+  background: #333;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #555;
+}
+
+.project-box:hover {
+  background: #333;
+  border-color: #555;
+}
+
+.project-meta {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.project-meta .project-date {
+  color: #1e90ff;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.project-content h2 {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-top: 0.5rem;
+}
+
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #444;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.button:hover {
+  background: #555;
+  border-color: #666;
+}
+
+.button.small {
+  font-size: 0.8rem;
+}
+
+.project-content h2 {
+  color: white; /* White title */
+  font-size: 1.2rem;
+  margin-top: 2rem; /* Add spacing from the year */
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-top: 0.5rem;
+}
+
+
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background: #444; 
+  color: white;
+  border-radius: 8px; 
+  border: 2px solid #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.button:hover {
+  background: #555; 
+  border-color: #666;
+}
+
+.button.small {
+  font-size: 0.8rem;
+}
+
+
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #444;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #555;
+}
+
+.button.small {
+  font-size: 0.8rem;
+}
 
 
 /* Prose */
