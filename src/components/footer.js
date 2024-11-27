@@ -19,7 +19,7 @@ const Footer = () => {
     <footer className="footer">
       {/* Section for social links */}
       <section>
-        <h2>☂️</h2>
+        <h1>☂️</h1>
         <nav>
           {socialLinks.map((link) => (
             <a
