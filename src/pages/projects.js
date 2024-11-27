@@ -27,7 +27,7 @@ const ProjectsPage = ({ location }) => {
 
   return (
     <Layout location={location} title="Max Pilipovic">
-      <main className="container">
+      <main className="page-container">
         <h1>Projects</h1>
         <p>
           A collection of open-source projects I’ve worked on, including this
