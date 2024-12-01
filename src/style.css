@@ -66,12 +66,13 @@
 .page-container {
   max-width: 800px; 
   margin: 0 auto; 
-  padding: 2rem 1rem; 
+  padding: 0 1rem 2rem 1rem;
 }
 
 .page-container h1 {
   color: white;
   font-size: 50px;
+  margin-top: 0.5;
   margin-bottom: 1rem;
 }
 
@@ -153,7 +154,8 @@ h3 {
 }
 
 h4 {
-  font-size: var(--fontSize-3);
+  font-size: var(--fontSize-2);
+  color: var(--color-text);
 }
 
 h5 {
@@ -640,6 +642,46 @@ a:focus {
 
 .blog-post-nav ul {
   margin: var(--spacing-0);
+}
+
+.blog-list {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-item {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 0.5rem; 
+  padding: 0.1rem; 
+  transition: background-color 0.3s ease, border-radius 0.3s ease; 
+}
+
+.blog-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 15px; 
+}
+
+.blog-title {
+  font-weight: bold;
+  color: #007acc; 
+  text-decoration: none;
+  transition: color 0.3s ease; 
+}
+
+.blog-title:hover {
+  color: #007acc; 
+}
+
+.blog-date {
+  color: white; 
+  font-size: 0.9rem; 
+  transition: color 0.3s ease; 
+}
+
+.blog-date:hover {
+  color: #007acc; 
 }
 
 .gatsby-highlight {
