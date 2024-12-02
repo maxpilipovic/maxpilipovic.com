@@ -138,6 +138,7 @@ h1 {
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-7);
   color: var(--color-heading-black);
+  margin-top: 1rem;
 }
 
 h2 {
@@ -189,7 +190,6 @@ h6 > a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem; /* Adjust padding if necessary */
   background-color: #181818;
   color: white;
   position: fixed; /* Fix the navbar */

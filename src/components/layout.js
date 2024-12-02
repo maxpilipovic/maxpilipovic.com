@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './navbar'; // Import the Navbar component
-import { Link } from 'gatsby'; // For Gatsby-specific navigation
-import Footer from './footer'; 
+import Footer from './footer';
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location.pathname === rootPath;
 
-  {/* Wrapper */}
+  // Scroll to top on page load or route change
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [location.pathname]);
+
   return (
     <div
       className="global-wrapper"
       style={{
         maxWidth: '800px',
         margin: '0 auto',
-        padding: '0 1.5rem',
+        padding: '60px 1.5rem 0', // Adjust padding for the fixed navbar
         fontFamily: 'Arial, sans-serif',
         lineHeight: '1.6',
       }}
@@ -24,7 +27,7 @@ const Layout = ({ location, title, children }) => {
       <Navbar />
 
       {/* Main Content */}
-      <main>{children}</main>
+      <main style={{ marginTop: '1rem' }}>{children}</main>
 
       {/* Footer */}
       <Footer />
