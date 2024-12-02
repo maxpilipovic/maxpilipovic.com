@@ -28,7 +28,7 @@ const ProjectsPage = ({ location }) => {
   return (
     <Layout location={location} title="Max Pilipovic">
       <main className="page-container">
-        <h1>Projects</h1>
+        <h1 style={{ marginBottom: "0.8rem"}}>Projects</h1>
         <p>
           A collection of open-source projects I’ve worked on, including this
           website, apps, and many other exciting ideas in the future.

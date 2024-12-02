@@ -21,7 +21,7 @@ const NotesPage = ({ data, location }) => {
       <Seo title="Notes" />
       <main className="page-container">
         <section>
-          <h1 style={{ marginBottom: "0.8rem" }}>Notes</h1>
+          <h1 style={{ marginBottom: "0.8rem"}}>Notes</h1>
           <p style={{ marginTop: "0" }}>
             Personal notes about life, articles, and tutorials
           </p>

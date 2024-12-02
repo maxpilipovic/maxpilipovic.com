@@ -74,6 +74,7 @@
   font-size: 50px;
   margin-top: 0.5;
   margin-bottom: 1rem;
+
 }
 
 /* HTML elements */
@@ -188,30 +189,46 @@ h6 > a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem; /* Adjust padding if necessary */
   background-color: #181818;
   color: white;
+  position: fixed; /* Fix the navbar */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Place above other content */
+  height: 60px; /* Explicit height */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
 
+/* Adjust body to account for navbar height */
+body {
+  margin-top: 60px; /* Matches the navbar height */
+}
+
+/* Navbar Brand */
 .navbar .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
   text-decoration: none;
+  margin-left: 42rem;
 }
 
+/* Navbar Links */
 .navbar-links {
   display: flex;
   align-items: center;
   gap: 1rem; /* Adds consistent spacing between links */
+  margin-right: 42rem;
 }
 
-/* Navbar Links */
+/* Navbar Link Styling */
 .navbar-link {
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  background: #444; /* Matches footer buttons */
+  background: #444;
   color: white;
   border-radius: 8px;
   border: 2px solid #555;
@@ -221,7 +238,7 @@ h6 > a {
 }
 
 .navbar-link:hover {
-  background: #555; /* Matches hover effect of footer buttons */
+  background: #555;
   border-color: #666;
 }
 
@@ -690,7 +707,6 @@ a:focus {
 
 /* Hero */
 .hero-wrapper {
-  padding-top: 2rem;
   display: grid;
 }
 
