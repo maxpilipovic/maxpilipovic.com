@@ -8,7 +8,7 @@ const AboutMePage = ({ location }) => (
   <Layout location={location} title="Max Pilipovic">
     <main className="page-container">
       <div>
-        <h1 style={{ marginBottom: "0.8rem", paddingTop: '2rem'}}>About Me</h1>
+        <h1 style={{ marginBottom: "0.8rem"}}>About Me</h1>
         <div style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '2rem', flexDirection: 'row-reverse' }}>
           <img
             src={ProfileImage}
