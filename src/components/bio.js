@@ -46,15 +46,15 @@ const Bio = () => {
       <div className="hero-wrapper">
         {author?.name && <h1 style = {{color: "white", fontSize: "50px", margin: "0"}}> Hey, I'm {author.name}</h1>}
         <p className = "hero-description">
-          I am software developer and ex athete (tennis player).
-          This is my corner of the internet, follow my passion
-          - developing things! 🌐
+          I am software engineer from Australia, I make content on different platforms.
+          Follow my passion
+          - developing things! ☂️
         </p>
         <p className = "hero-description">
-          On this site, you can check out some of the {''}
-          <Link to="/notes">notes</Link> I've written, or view open-source{' '}
+          On this site, you can check out my {''}
+          <Link to="/notes">notes</Link>, or view my {' '}
           <Link to="/projects">projects</Link> or learn{' '}
-          <Link to="/me">about me</Link> as a person ☂️.
+          <Link to="/me">about me</Link>.
         </p>
         <div className="decoration">
             <StaticImage

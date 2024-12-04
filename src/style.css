@@ -188,77 +188,20 @@ h6 > a {
 /* Navbar */
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: #181818;
   color: white;
-  position: fixed; /* Fix the navbar */
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* Place above other content */
-  height: 60px; /* Explicit height */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  padding-left: 1rem;
 }
 
-/* Adjust body to account for navbar height */
-body {
-  margin-top: 60px; /* Matches the navbar height */
-}
-
-/* Navbar Brand */
-.navbar .navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  margin-left: 42rem;
-}
-
-/* Navbar Links */
-.navbar-links {
+.navbar .navbar-links {
   display: flex;
-  align-items: center;
-  gap: 1rem; /* Adds consistent spacing between links */
-  margin-right: 42rem;
+  gap: 1.2rem;
 }
 
-/* Navbar Link Styling */
-.navbar-link {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  background: #444;
-  color: white;
-  border-radius: 8px;
-  border: 2px solid #555;
+.navbar .navbar-link {
+  font-size: 1.2rem;
   text-decoration: none;
-  font-size: 0.9rem;
-  transition: background 0.3s, border-color 0.3s;
-}
-
-.navbar-link:hover {
-  background: #555;
-  border-color: #666;
-}
-
-/* Theme Toggle Button */
-.navbar-button {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  background: #444;
-  color: white;
-  border-radius: 8px;
-  border: 2px solid #555;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background 0.3s, border-color 0.3s;
-}
-
-.navbar-button:hover {
-  background: #555;
-  border-color: #666;
 }
 
 /* Footer */
