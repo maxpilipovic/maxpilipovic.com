@@ -5,7 +5,7 @@ import gatsbyIcon from '../images/gatsby-icon.png';
 
 // Define the links dynamically
 const socialLinks = [
-  { url: 'https://linktr.ee/maxpilipovic', label: 'Linktree' },
+  { url: 'https://linktr.ee/maxpilipovic', label: 'social media' },
 ];
 
 const resourcesLinks = [

@@ -10,7 +10,6 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title="Max Pilipovic">
       <Seo title="All posts" />
-      <main className="page-container">
         {/* Bio Section */}
         <Bio />
         <section>
@@ -28,7 +27,7 @@ const BlogIndex = ({ data, location }) => {
             ))}
           </div>
         </section>
-      </main>
+
     </Layout>
   );
 };

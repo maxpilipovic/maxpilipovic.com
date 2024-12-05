@@ -27,7 +27,6 @@ const ProjectsPage = ({ location }) => {
 
   return (
     <Layout location={location} title="Max Pilipovic">
-      <main className="page-container">
         <h1 style={{ marginBottom: "0.8rem"}}>Projects</h1>
         <p>
           A collection of open-source projects I’ve worked on, including this
@@ -77,7 +76,6 @@ const ProjectsPage = ({ location }) => {
             </div>
           ))}
         </section>
-      </main>
     </Layout>
   );
 };
