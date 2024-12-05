@@ -574,22 +574,6 @@ a:focus {
   font-size: var(--fontSize-2);
 }
 
-.bio {
-  display: flex;
-  margin-bottom: var(--spacing-16);
-}
-
-.bio p {
-  margin-bottom: var(--spacing-0);
-}
-
-.bio-avatar {
-  margin-right: var(--spacing-4);
-  margin-bottom: var(--spacing-0);
-  min-width: 50px;
-  border-radius: 100%;
-}
-
 .blog-post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }
@@ -647,47 +631,44 @@ a:focus {
   margin-bottom: var(--spacing-8);
 }
 
-/* Hero */
-.hero-wrapper {
-  display: grid;
+/* BIO and HERO */
+.bio {
+  display: flex; /* Flexbox for horizontal layout */
+  align-items: center; /* Vertically align items */
+  justify-content: space-between; /* Add spacing between text and image */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  margin-bottom: var(--spacing-16);
 }
 
-.hero-description {
-  margin: 1.5rem 0;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: var(--font-color-hero-description);
-  font-weight: 500;
+.bio-text {
+  flex: 1; /* Take up available space */
+  padding-right: 1rem; /* Add spacing between text and image */
 }
 
-.decoration {
-  display: flex;
-  align-items: center;
-  order: 1;
+.bio p {
+  margin-bottom: var(--spacing-1); /* Adjust spacing between paragraphs */
 }
 
-@media screen and (min-width: 700px) {
-  .hero-wrapper {
-    padding-top: 0;
-    display: grid;
-    grid-template-columns: 4fr 2fr;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .hero-description {
-    grid-column: 1;
-    margin: 1.5rem 0 0;
-    font-size: 1.2rem;
-  }
-
-  .decoration {
-    grid-column: 2;
-    justify-content: flex-end;
-    align-self: start;
-    margin-top: -150px
-  }
+.bio-text p {
+  margin-bottom: 1rem; /* Adds spacing between paragraphs */
 }
+
+.bio-text h1 {
+  margin: 0;
+  padding-bottom: 1rem; /* Adjust spacing below the title */
+}
+
+.bio-avatar {
+  border-radius: 50%; /* Make it circular */
+  width: 200px; /* Set fixed width */
+  height: 200px; /* Set fixed height */
+  object-fit: cover; /* Ensure the image is not distorted */
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  margin-left: 1rem; /* Add spacing between the text and image */
+}
+
+
+
 
 /* Containers */
 .container {

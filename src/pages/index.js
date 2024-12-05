@@ -10,9 +10,8 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title="Max Pilipovic">
       <Seo title="All posts" />
-        {/* Bio Section */}
-        <Bio />
         <section>
+          <Bio />
           <h1 style={{ marginBottom: '0.8rem' }}>Notes</h1>
           <p style={{ marginTop: '0' }}>Personal notes about life, articles and tutorials</p>
           {/* Blog list without bullet points */}
