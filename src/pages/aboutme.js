@@ -5,6 +5,7 @@ import ProfileImage from '../images/maxandolive.png';
 import ProfileImage2 from '../images/maxandryan.jpeg';
 import Seo from "../components/seo";
 
+
 const AboutMePage = ({ data, location }) => {
   const linkStyle = {
     textDecoration: 'none',
@@ -46,14 +47,14 @@ const AboutMePage = ({ data, location }) => {
             <a href="mailto:maxpkusa@gmail.com" style={linkStyle}>
               ↗ email me! 📧
             </a>
-            <a href="https://linktr.ee/maxpilipovic" target="_blank" rel="noopener noreferrer" style={linkStyle}>
-              ↗ my social media
-            </a>
-            <a href="https://example.com/subscribe" target="_blank" rel="noopener noreferrer" style={linkStyle}>
+            <a href={Resume} target="_blank" rel="noopener noreferrer" style={linkStyle}>
               ↗ my resume
             </a>
-            <a href="https://www.linkedin.com/in/max-pilipovic/" target="_blank" rel="noopener noreferrer" style={linkStyle}>
-              ↗ connect on linkedin
+            <a href="https://linktr.ee/maxpilipovic" target="_blank" rel="noopener noreferrer" style={linkStyle}>
+              ↗ social media links
+            </a>
+            <a href="https://www.youtube.com/watch?v=WinTlHM90sc&t=8s" target="_blank" rel="noopener noreferrer" style={linkStyle}>
+              ↗ listen to podcast
             </a>
           </div>
         </section>
