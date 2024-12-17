@@ -13,8 +13,6 @@ const BlogIndex = ({ data, location }) => {
         <section>
           <Bio />
           <h1 style={{ marginBottom: '0.8rem' }}>Notes</h1>
-          <p style={{ marginTop: '0' }}>Personal notes about life, articles and tutorials</p>
-          {/* Blog list without bullet points */}
           <div className="blog-list">
             {posts.map(post => (
               <div key={post.fields.slug} className="blog-item">

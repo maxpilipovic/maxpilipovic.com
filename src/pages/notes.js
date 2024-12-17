@@ -20,10 +20,7 @@ const NotesPage = ({ data, location }) => {
     <Layout location={location} title="Max Pilipovic">
       <Seo title="Notes" />
         <section>
-          <h1 style={{ marginBottom: "0.8rem"}}>Notes</h1>
-          <p style={{ marginTop: "0" }}>
-            Personal notes about life, articles, and tutorials
-          </p>
+          <h1 style={{ marginBottom: "0.8rem"}}>My Notes</h1>
           {/* Grouped blog list */}
           <div className="blog-list">
             {Object.keys(postsByYear)
