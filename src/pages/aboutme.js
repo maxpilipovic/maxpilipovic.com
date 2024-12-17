@@ -1,8 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Resume from '../images/Max_Pilipovic_Resume2024.pdf';
-import ProfileImage from '../images/maxandolive.png';
-import ProfileImage2 from '../images/maxandryan.jpeg';
 import Seo from "../components/seo";
 
 
