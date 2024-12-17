@@ -3,11 +3,6 @@ import netlifyIcon from '../images/netlify.png';
 import githubIcon from '../images/githubsir.png';
 import gatsbyIcon from '../images/gatsby-icon.png';
 
-// Define the links dynamically
-const socialLinks = [
-  { url: 'https://linktr.ee/maxpilipovic', label: 'social media' },
-];
-
 const resourcesLinks = [
   { url: 'https://github.com', label: 'GitHub', icon: githubIcon },
   { url: 'https://www.gatsbyjs.com/', label: 'Gatsby', icon: gatsbyIcon },
@@ -17,23 +12,6 @@ const resourcesLinks = [
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* Section for social links */}
-      <section>
-        <h1>☂️</h1>
-        <nav>
-          {socialLinks.map((link) => (
-            <a
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={link.url}
-              className="footer-link"
-            >
-              {link.label}
-            </a>
-          ))}
-        </nav>
-      </section>
 
       {/* Section for resources and tools */}
       <section>
