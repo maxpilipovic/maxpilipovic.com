@@ -666,6 +666,7 @@ a:focus {
   margin-left: 1rem; /* Add spacing between the text and image */
 }
 
+/* FIX THIS OR REMOVE */
 @media (max-width: 42rem) {
   .bio {
     flex-direction: column;
