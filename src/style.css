@@ -633,11 +633,10 @@ a:focus {
 
 /* BIO and HERO */
 .bio {
-  display: flex; /* Flexbox for horizontal layout */
-  align-items: center; /* Vertically align items */
-  justify-content: space-between; /* Add spacing between text and image */
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
-  margin-bottom: var(--spacing-16);
+  display: flex;
+  flex-direction: row; /* Default to side by side */
+  align-items: center;
+  justify-content: space-between;
 }
 
 .bio-text {
@@ -665,6 +664,20 @@ a:focus {
   object-fit: cover; /* Ensure the image is not distorted */
   flex-shrink: 0; /* Prevent the image from shrinking */
   margin-left: 1rem; /* Add spacing between the text and image */
+}
+
+@media (max-width: 42rem) {
+  .bio {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+  }
+  .bio-avatar {
+    margin-left: 0; /* Remove left margin on smaller screens */
+    margin-top: 1rem; /* Add margin top for spacing when stacked */
+  }
+  .bio-text {
+    padding-right: 0; /* Remove right padding on smaller screens */
+  }
 }
 
 
@@ -711,9 +724,12 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+
+  /*
   .bio-avatar {
     display: none;
   }
+    */
 
 }
 
