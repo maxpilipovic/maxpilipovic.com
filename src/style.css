@@ -711,10 +711,16 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+  .bio-avatar {
+    display: none;
+  }
+
 }
 
+/* NOT WORKING?
 @media (max-width: 768px) {
   .bio-avatar {
     display: none;
   }
 }
+*/
