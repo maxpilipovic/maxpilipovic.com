@@ -23,23 +23,14 @@ const NotesPage = ({ data, location }) => {
           <h1 style={{ marginBottom: "0.8rem"}}>My Notes</h1>
           {/* Grouped blog list */}
           <div className="blog-list">
-            {Object.keys(postsByYear)
-              .sort((a, b) => b - a) // Sort years descending
-              .map((year) => (
-                <div key={year} className="year-group">
-                  <h2>{year}</h2>
-                  {postsByYear[year].map((post) => (
-                    <div key={post.fields.slug} className="blog-item">
-                      <a href={post.fields.slug} className="blog-title">
-                        {post.frontmatter.title}
-                      </a>
-                      <span className="blog-date">
-                        <b>{post.frontmatter.date}</b>
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              ))}
+            {posts.map(post => (
+              <div key={post.fields.slug} className="blog-item">
+                <a href={post.fields.slug} className="blog-title">
+                  {post.frontmatter.title}
+                </a>
+                <span className="blog-date"><b>{post.frontmatter.date}</b></span>
+              </div>
+            ))}
           </div>
         </section>
     </Layout>

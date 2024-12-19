@@ -1,10 +1,10 @@
 import React from 'react';
 import netlifyIcon from '../images/netlify.png';
-import githubIcon from '../images/githubsir.png';
 import gatsbyIcon from '../images/gatsby-icon.png';
+import linktreeIcon from '../images/linktree.png';
 
 const resourcesLinks = [
-  { url: 'https://github.com', label: 'GitHub', icon: githubIcon },
+  { url: 'https://linktr.ee/maxpilipovic', label: 'Linktree', icon: linktreeIcon },
   { url: 'https://www.gatsbyjs.com/', label: 'Gatsby', icon: gatsbyIcon },
   { url: 'https://www.netlify.com/', label: 'Netlify', icon: netlifyIcon },
 ];

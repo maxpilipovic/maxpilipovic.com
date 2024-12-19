@@ -24,10 +24,8 @@ const AboutMePage = ({ data, location }) => {
             <span style={{ color: '#007acc' }}> <b>Australia</b></span>. I create 
             <span style={{ color: '#007acc' }}> <b>content</b></span> about cs, and showcase my <span style={{ color: '#007acc' }}> <b>journey</b></span> as a <span style={{ color: '#007acc' }}> <b>swe</b></span>.
           </p>
-          <div>
+          <div className="video-container">
             <iframe
-              width="100%"
-              height="400"
               src="https://www.youtube.com/embed/VAmP2z9PzXE?start=681"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

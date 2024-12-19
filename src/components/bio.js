@@ -31,7 +31,7 @@ const Bio = () => {
         </h1>
         <p>
           I am a software engineer from Australia, I make content on different
-          platforms. Follow my passion — developing things! 
+          platforms. Follow my passion, developing things! 
         </p>
         <p>
           On this site, you can check out my <Link to="/notes">notes</Link>, view
