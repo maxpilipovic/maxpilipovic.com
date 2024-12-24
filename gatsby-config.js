@@ -114,11 +114,21 @@ module.exports = {
         short_name: `Max`,
         start_url: `/`,
         background_color: `#ffffff`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/jokerIcon2.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-Q56SDM9SW1", // Replace with your Measurement ID
+        ],
+        pluginConfig: {
+          head: true, // Place script in the head of the document
+          respectDNT: true, // Respect users' do-not-track setting
+          exclude: ["/preview/**", "/do-not-track/me/too/"], // Exclude specified paths
+        },
       },
     },
   ],

@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -11,12 +10,23 @@ const BlogPostTemplate = ({
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
 
+  const handlePostClick = () => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "click", {
+        event_category: "Blog Post",
+        event_label: `Post: ${post.frontmatter.title}`,
+        value: 1
+      });
+    }
+  };
+
   return (
     <Layout location={location} title={siteTitle}>
       <article
         className="blog-post"
         itemScope
         itemType="http://schema.org/Article"
+        onClick={handlePostClick}  // Adding onClick handler here
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
