@@ -36,17 +36,6 @@ const Navbar = () => {
           notes
         </Link>
         <Link
-          to="/projects"
-          className="navbar-link"
-          onClick={(e) => {
-            e.preventDefault();
-            handleScrollToTop();
-            window.location.href = '/projects';
-          }}
-        >
-          projects
-        </Link>
-        <Link
           to="/aboutme"
           className="navbar-link"
           onClick={(e) => {

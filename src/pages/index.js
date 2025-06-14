@@ -22,8 +22,7 @@ const BlogIndex = ({ data, location }) => {
               platforms. Follow my passion, developing things!
             </p>
             <p>
-              On this site, you can check out my <Link to="/notes">notes</Link>, view
-              my <Link to="/projects">projects</Link>, or learn <Link to="/me">about me</Link>.
+              On this site, you can check out my <Link to="/notes">notes</Link> or learn <Link to="/me">about me</Link>.
             </p>
           </div>
           <StaticImage
@@ -32,17 +31,7 @@ const BlogIndex = ({ data, location }) => {
             alt="Profile picture"
           />
         </div>
-        <h1 style={{ marginBottom: '0.8rem' }}>Notes</h1>
-        <div className="blog-list">
-          {posts.map(post => (
-            <div key={post.fields.slug} className="blog-item">
-              <a href={post.fields.slug} className="blog-title">
-                {post.frontmatter.title}
-              </a>
-              <span className="blog-date"><b>{post.frontmatter.date}</b></span>
-            </div>
-          ))}
-        </div>
+        
       </section>
     </Layout>
   );

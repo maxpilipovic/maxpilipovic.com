@@ -26,7 +26,7 @@ const AboutMePage = ({ data, location }) => {
           </p>
           <div className="video-container">
             <iframe
-              src="https://www.youtube.com/embed/xWkXc6guh1c?si=Zdd_vCEUMDAWhNaj"
+              src="https://www.youtube.com/embed/5PBEYPBteTM?si=R-7BGoDZ-j9meUXC"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
