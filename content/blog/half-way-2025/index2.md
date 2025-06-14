@@ -1,9 +1,6 @@
 ---
-title: Half-way 2025
+title: Half-Way 2025
 date: "2025-06-14T23:46:37.121Z"
----
-
-# Half-way Update 2025
 
 ---
 

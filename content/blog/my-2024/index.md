@@ -1,10 +1,6 @@
 ---
-title: My 2024
+title: A Year in Review, My 2024
 date: "2024-12-19T23:46:37.121Z"
----
-
-# A Year in Review, My 2024
-
 ---
 
 ### I GRADUATED
