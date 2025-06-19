@@ -22,7 +22,7 @@ const BlogIndex = ({ data, location }) => {
               platforms. Follow my passion, developing things!
             </p>
             <p>
-              On this site, you can check out my <Link to="/notes">notes</Link> or learn <Link to="/me">about me</Link>.
+              On this site, you can check out my <Link to="/notes">notes</Link> or learn about me.
             </p>
           </div>
           <StaticImage
