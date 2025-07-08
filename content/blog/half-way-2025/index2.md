@@ -6,7 +6,7 @@ date: "2025-06-14T23:46:37.121Z"
 
 ### I FINISHED MY FIRST YEAR OF GRAD SCHOOL 🦍
 
-Shittt time has really flown, it's already June. I'm currently working at INB as a software dev intern, where I'm building a pretty exciting project: an IT chatbot that acts as the first level of support for company employees. It's trained on company-specific data and integrates both OpenAI's API and FreshService's API (the helpdesk ticketing system we use). It’s been a fun and interesting experience so far!
+Shittt time has really flown, it's already June. I'm currently working at INB as a IT/dev intern, where I'm building a pretty exciting project: an IT chatbot that acts as the first level of support for company employees. It’s been a fun and interesting experience so far!
 
 Today marks **Day 142** of my Programming Everyday series on YouTube. I can't believe I'm nearly five months into this journey. I'm proud of the progress I've made, especially in competitive programming. Today also happens to be my first-ever livestream on YouTube, I'm curious to see how it goes by my next update. I'm excited to see how this goes!
 
