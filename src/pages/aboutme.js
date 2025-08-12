@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
-import Resume from '../images/Max_Pilipovic_Resume2024.pdf';
+import Resume from '../images/Max-Pilipovic-Resume.pdf';
 import Seo from "../components/seo";
 
 
